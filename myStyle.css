@@ -1,0 +1,158 @@
+/*Reusable OnePoint Variables*/
+:root{
+    /*ColorSchemes*/
+    --mainColor-Dom: rgb(255, 0, 0);
+    --mainColor-Sub1: rgb(255, 157, 0);
+    --mainColor-Sub2a: rgb(230, 246, 0);
+    --mainColor-Sub2b: rgba(13, 255, 0, 0.5);
+    --mainColor-Sub3: rgb(0, 255, 140);
+    --mainColor-Sub4: rgb(0, 255, 234);
+    --mainColor-Sub5: rgba(51, 0, 255, 0.45);
+    --mainColor-Sub6: rgb(200, 0, 255);
+
+    /*FontColorSchemes*/
+    --fontColor-Title: rgb(255, 0, 0);
+    --fontColor-Head1: rgb(255, 96, 96);
+    --fontColor-ContW: rgb(255, 255, 255);
+    --fontColor-ContB: rgb(0, 0, 0);
+    --fontColor-ContR: rgb(57, 28, 28);
+    --fontColor-Bold: rgb(255, 116, 16);
+    --fontColor-BoldShadow: rgba(255, 159, 32, 0.45);;
+
+    /*MiscColor*/
+    --link-ColorDormant: goldenrod;
+    --link-ColorActive: rgb(255, 208, 89);
+    --imag-ColorImageHover: crimson;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: var(--mainColor-Dom);
+    margin: 0px;
+}
+
+/* ==================================================== Class Stylizations =======================================================*/
+.canlasWebsite{
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----- ---- --- -- - HEADER Section Stylization - -- --- ---- ----- */
+.canlas-StylizedHeader{
+    text-align: right;
+    text-shadow: 10 10 10 var(--mainColor-Sub1);
+    color: var(--fontColor-ContW);
+
+    background-color: var(--mainColor-Sub6);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-blend-mode: color-dodge;
+
+    border: 90px;
+    padding: 15px;
+    margin: 0px;
+
+}
+
+/*----- ---- --- -- - MAIN Section Stylization - -- --- ---- ----- */
+.canlas-StylizedMain{
+    text-align: center;
+    text-shadow: 10 10 10 var(--mainColor-Sub1);
+    color: var(--fontColor-ContW);
+
+    background-color: var(--mainColor-Sub2a);
+    background-image: url(https://thumbs.dreamstime.com/b/illustration-white-tiger-design-tattoo-blue-porcelain-seamless-pattern-elements-illustration-white-tiger-design-tattoo-blue-158809605.jpg);
+    background-repeat: repeat;
+    background-size: 25%;
+    background-blend-mode:overlay;
+    padding: 10px;
+    margin: 0px;
+
+    flex: 0 0 70%;
+    flex-direction: row;
+}
+.canlas-StylizedMain section{
+    display: flex;
+    gap: 20px;
+
+}
+.canlas-StylizedMain article{
+    flex: 8;
+
+}
+.canlas-StylizedMain article strong{
+    color: var(--fontColor-Bold);
+    text-shadow: 0px 0px 10px var(--fontColor-BoldShadow);
+
+}
+.canlas-StylizedMain aside{
+    background-color: var(--mainColor-Sub5);
+    padding: 15px;
+
+    flex: 3;
+    text-align: right;
+    
+}
+.canlas-StylizedMain aside a{
+    color: var(--link-ColorDormant);
+
+}
+.canlas-StylizedMain aside a:hover{
+    color: var(--link-ColorActive);
+    
+}
+.canlas-StylizedMain h1{
+    text-align: left;
+    color: var(--fontColor-ContW);
+
+    background-color: var(--mainColor-Sub2a);
+    padding: 25px 35px;
+
+}
+.canlas-StylizedMain em{
+    font-size: x-small;
+    color: var(--mainColor-Sub1);
+
+}
+.canlas-StylizedMain p{
+    text-align: justify;
+    color: var(--fontColor-ContW);
+
+    background-color: var(--mainColor-Sub2b);
+    padding: 25px 40px;
+
+}
+.canlas-StylizedMain img{
+    color: var(--fontColor-ContW);
+
+    background-color: var(--mainColor-Sub2b);
+    border-radius: 25px;
+
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+
+    transition: box-shadow 0.5s ease;
+
+}
+.canlas-StylizedMain img:hover{
+    box-shadow: 0px 0px 60px var(--imag-ColorImageHover);
+
+}
+
+/*----- ---- --- -- - FOOTER Section Stylization - -- --- ---- ----- */
+.canlas-StylizedFooter{
+    text-align: center;
+    font-size: x-small;
+    color: var(--fontColor-ContR);
+
+    background-color: var(--mainColor-Sub2a);
+    padding: 30px 50px;
+
+}
+
