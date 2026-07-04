@@ -3,7 +3,7 @@
     /*ColorSchemes*/
     --mainColor-Dom: rgb(255, 0, 0);
     --mainColor-Sub1: rgb(255, 157, 0);
-    --mainColor-Sub2a: rgb(9, 10, 12);
+    --mainColor-Sub2a: rgb(0, 35, 105);
     --mainColor-Sub2b: rgba(13, 255, 0, 0.5);
     --mainColor-Sub3: rgb(0, 255, 140);
     --mainColor-Sub4: rgb(0, 255, 234);
@@ -65,10 +65,15 @@ body {
     border-radius: 15px 15px 0px 0px;
 
     text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
 }
 
-.kal-StylizedNavbar button {
-    width: 200px;
+.kal-StylizedNavbar a {
+    width: 100%;
     padding: 10px 0px 10px 0px;
 
     background-color: rgba(0, 0, 0, 0.5);
@@ -76,18 +81,53 @@ body {
     border: 0px;
     border-radius: 15px 15px 0px 0px;
 
-    transition: padding-inline 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
 }
 
-.kal-StylizedNavbar button:hover {
-    width: 200px;
-
+.kal-StylizedNavbar a:hover {
     background-color: rgba(233, 0, 0, 0.849);
     color: var(--fontColor-ContW);
     border: 0px;
     border-radius: 15px 15px 0px 0px;
 
-    padding-inline: 200px;
+}
+
+.kal-SNavButton{
+    flex: 1;
+}
+
+.active{
+    flex: 2;
+}
+
+@media (max-width: 600px) {
+    .kal-StylizedNavbar {
+        background-color: var(--mainColor-Sub2a);
+        padding: 5px 15px 0px 15px;
+        border-radius: 15px 15px 0px 0px;
+
+        text-align: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 12px;
+    }
+    .kal-StylizedNavbar button{
+        width: 100%;
+        max-width: 250px;
+
+        background-color: var(--mainColor-Sub2a);
+        padding: 5px 8px 0px 8px;
+        border-radius: 15px 15px 15px 15px;
+
+        text-align: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 12px;
+    }
 }
 
 .kal-Line {
@@ -281,7 +321,7 @@ body {
     font-size: 50px;
 }
 
-.kal-portfolio-1P1I-Box{
+.kal-portfolio-1P1I-Box {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -291,13 +331,13 @@ body {
 
 }
 
-.kal-portfolio-1P1I-Box img{
+.kal-portfolio-1P1I-Box img {
     width: 350px;
     height: auto;
     flex-shrink: 0;
 }
 
-.kal-portfolio-1P1I-Box p{
+.kal-portfolio-1P1I-Box p {
     flex: 1;
 
 }
