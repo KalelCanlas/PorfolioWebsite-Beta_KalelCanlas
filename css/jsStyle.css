@@ -1,0 +1,53 @@
+.kal-Img{
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+.kal-Img:hover{
+    transform: scale(1.05) skew(-4deg, 0deg);
+    transition: all 0.35s ease;
+}
+
+/*Id Declarations*/
+#kal-Img-Viewer{
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+#kal-Img-Viewer.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Enlarging Image*/
+#img-ToView{
+    max-width: 75vw;
+    max-height: 85vh;
+
+    border-radius: 12px;
+
+    transform: scale(0.8);
+    transition: transform .3s ease;
+
+    cursor: zoom-in;
+}
+#img-ToView.zoomed{
+    transform: scale(2.5);
+    cursor: zoom-out;
+}
+
+/*Zooming In*/
+#kal-Img-Viewer.show #img-ToView:not(.zoomed){
+    transform: scale(1);
+}
