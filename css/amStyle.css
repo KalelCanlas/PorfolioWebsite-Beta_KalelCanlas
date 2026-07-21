@@ -1,0 +1,50 @@
+.kal-AbtTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+.kal-AbtTable th, .kal-AbtTable td{
+    padding: 12px 16px;
+
+    text-align: left;
+    vertical-align: top;
+}
+.kal-AbtTable th{
+    width: 180px;
+
+    color: var(--fontColor-Bold);
+    white-space: nowrap;
+}
+
+/*--------------------- -- - TIMELINE MODIFICATIONS - -- ----------------------*/
+.kal-TLItem{
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.kal-TLItem h3{
+    margin: 0 0 8px;
+    color: var(--fontColor-ContW);
+}
+.kal-TLItem p{
+    margin: 6px 0;
+    background-color: rgba(54, 33, 16, 0.802);
+}
+.kal-TLItem p{
+    margin: 6px 0;
+    background-color: rgba(54, 33, 16, 0.802);
+}
+
+/*----------------------- -- - SKILLS MODIFICATIONS - -- -----------------------*/
+.kal-Skills{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+.kal-SkillTag{
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--fontColor-ContB);
+    font-size: 0.9rem;
+}

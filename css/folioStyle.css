@@ -48,6 +48,7 @@
     object-fit: cover;
 
     border-radius: 20px;
+    align-content: center;
 }
 .kal-HeroImg-Modify{
     width: 75%;

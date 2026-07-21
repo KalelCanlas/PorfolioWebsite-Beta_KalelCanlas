@@ -58,7 +58,6 @@ body {
     margin: 0px;
 
 }
-
 .kal-StylizedNavbar {
     background-color: var(--mainColor-Sub2a);
     padding: 15px 15px 0px 15px;
@@ -71,7 +70,6 @@ body {
     flex-direction: row;
     gap: 15px;
 }
-
 .kal-StylizedNavbar a {
     width: 100%;
     padding: 10px 0px 10px 0px;
@@ -81,9 +79,10 @@ body {
     border: 0px;
     border-radius: 15px 15px 0px 0px;
 
+    font-family: Helvetica;
+
     transition: background-color 0.3s ease-out;
 }
-
 .kal-StylizedNavbar a:hover {
     background-color: rgba(233, 0, 0, 0.849);
     color: var(--fontColor-ContW);
@@ -91,11 +90,9 @@ body {
     border-radius: 15px 15px 0px 0px;
 
 }
-
 .kal-SNavButton{
     flex: 1;
 }
-
 .active{
     flex: 2;
 }
@@ -135,7 +132,6 @@ body {
     padding: 5px 0px 5px 0px;
     width: 100%;
 }
-
 .kal-HeaderBrand{
     display: flex;
     align-items: center;
@@ -145,10 +141,17 @@ body {
     gap: 12px;
     width: 100%;;
 }
-.kal-HeaderBrand h1{
+.kal-HeaderBrand pre{
     margin: 0;
     padding: 0;
     line-height: 1;
+
+    font-size: 55px;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(14, 174, 120);
+
+    mix-blend-mode: color-dodge;
 }
 .kal-Logo{
     width: 125px;
@@ -159,7 +162,10 @@ body {
 
     background-color: rgba(255, 157, 0, 0.5);
     padding: 13px 50px;
-    margin: -15px -15px 0 -10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 100px 0px 100px 0px;
+
+    mix-blend-mode: color-dodge;
 }
 
 /*----- ---- --- -- - MAIN Section Stylization - -- --- ---- ----- */
@@ -179,24 +185,20 @@ body {
     flex: 0 0 70%;
     flex-direction: row;
 }
-
 .canlas-StylizedMain section {
     display: flex;
     gap: 20px;
 
 }
-
 .canlas-StylizedMain article {
     flex: 8;
 
 }
-
 .canlas-StylizedMain article strong {
     color: var(--fontColor-Bold);
     text-shadow: 0px 0px 10px var(--fontColor-BoldShadow);
 
 }
-
 .canlas-StylizedMain aside {
     background-color: var(--mainColor-Sub5);
     padding: 15px 35px 0 20px;
@@ -204,17 +206,14 @@ body {
     text-align: right;
 
 }
-
 .canlas-StylizedMain aside a {
     color: var(--link-ColorDormant);
 
 }
-
 .canlas-StylizedMain aside a:hover {
     color: var(--link-ColorActive);
 
 }
-
 .canlas-StylizedMain h1 {
     text-align: left;
     color: var(--fontColor-ContW);
@@ -223,13 +222,11 @@ body {
     padding: 25px 35px;
 
 }
-
 .canlas-StylizedMain em {
     font-size: x-small;
     color: var(--mainColor-Sub1);
 
 }
-
 .canlas-StylizedMain p {
     text-align: justify;
     color: var(--fontColor-ContW);
@@ -238,7 +235,6 @@ body {
     padding: 25px 40px;
 
 }
-
 .canlas-StylizedMain img {
     color: var(--fontColor-ContW);
 
@@ -252,35 +248,36 @@ body {
     transition: box-shadow 0.5s ease;
 
 }
-
 .canlas-StylizedMain img:hover {
     box-shadow: 0px 0px 60px var(--imag-ColorImageHover);
 
 }
 
+/* ------------------------- -- - - BANNER STYLIZATIONS - - -- -------------------------------*/
 .kal-Banner {
     max-width: 100%;
     height: 250px;
     margin: 0px;
 
-    background-color: var(--mainColor-Sub6);
-    background-image: url(https://i.pinimg.com/564x/e8/32/ca/e832ca4c5fb77bdec9289836514c9531.jpg);
+    background-color: rgba(78, 29, 87, 0.749);
+    background-image: url('../img/resources/MyselfPicture.png');
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
 
+    border-bottom: 2px solid rgba(255, 157, 0, 0.25);
+
     transition: height 0.5s ease;
 }
-
 .kal-Banner:hover {
     max-width: 100%;
     height: 750px;
 
-    background-color: rgba(13, 255, 0, 0.5);
+    background-color: rgba(255, 153, 0, 0.25);
+    border-bottom: 5px solid rgba(255, 157, 0, 0.25);
 
     backdrop-filter: blur(5px);
 }
-
 .kal-Banner h3 {
     font-size: xx-large;
     text-align: center;
@@ -288,12 +285,10 @@ body {
 
     transition: font-size 0.5s ease;
 }
-
 .kal-Banner:hover h3 {
     font-size: xx-small;
     text-align: center;
 }
-
 .kal-Banner h4 {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px 0px;
@@ -301,27 +296,23 @@ body {
     font-size: 0px;
     text-align: center;
 
-
     transition: font-size 0.5s ease;
 }
-
 .kal-Banner:hover h4 {
     padding: 0px 0px 0px 0px;
 
     text-align: center;
     font-size: 75px;
 }
-
 .kal-Banner p {
     padding: 0px 0px;
+    background-color: rgba(126, 56, 9, 0.538);
 
     font-size: 0px;
     text-align: center;
 
-
     transition: font-size 0.5s ease;
 }
-
 .kal-Banner:hover strong {
     padding: 0px 0px;
 
@@ -331,14 +322,12 @@ body {
 
     transition: font-size 0.5s ease;
 }
-
 .kal-Banner:hover p {
     padding: 0px 0px 0px 0px;
 
     text-align: center;
     font-size: 30px;
 }
-
 .kal-Banner:hover p strong {
     padding: 0px 0px 0px 0px;
 
@@ -346,25 +335,175 @@ body {
     font-size: 50px;
 }
 
-.kal-portfolio-1P1I-Box {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+/* ------------------------- -- - - CONTENT STYLIZATIONS - - -- -------------------------------*/
+.kal-CardBox{
+    margin: 40px;
 
-    margin-inline: 30px;
+    padding: 35px;
+    border-radius: 25px;
+    background: rgba(99, 72, 27, 0.5);
+    border: 3px solid rgba(255, 157, 0, 0.25);
+}
+.kal-CardBox h2{
+    margin-top: 0px;
+
+    color: var(--fontColor-Bold);
+}
+.kal-CardBox p{
+    line-height: 1.9;
+    text-align: justify;
+    
+}
+.kal-CardBox img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+
+    border-radius: 20px;    
+}
+.kal-CardContact{
+    margin: 40px;
+    text-align: left;
     gap: 30px;
 
+    padding: 35px;
+    border: 3px solid rgba(255, 157, 0, 0.25);
+    border-radius: 25px;
+    background: rgba(99, 72, 27, 0.5);
+}
+.kal-CardContact h1{
+    background: transparent;
+    padding: 25px 25px;
+}
+.kal-ContactTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+.kal-ContactTable th, .kal-ContactTable td{
+    padding: 14px 18px;
+    border: none;
+    text-align: left;
+    vertical-align: top;
+}
+.kal-ContactTable th{
+    width: 180px;
+
+    color: var(--fontColor-Bold);
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.kal-ContactTable a{
+    color: var(--fontColor-Active);
+    text-decoration: none;
+}
+.kal-ContactTable a:hover{
+    text-decoration: underline;
+}
+.kal-ContactTable tr + tr th, .kal-ContactTable tr + tr td{
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.kal-portfolio-1P1I-Box img {
-    width: 350px;
+/* ---------------------------- -- - CONTACT FORM MODIFICATIONZ - -- --------------------------------- */
+.kal-ContactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.kal-ContactForm label{
+    font-weight: 700;
+    color: var(--fontColor-ContW);
+    text-align: left;
+}
+.kal-ContactForm input, .kal-CardContact textarea{
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--fontColor-ContB);
+    box-sizing: border-box;
+}
+.kal-ContactForm button{
+    margin-top: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+
+    background: var(--mainColor-Sub1);
+    color: var(--fontColor-ContB);
+    font-weight: 700;
+    cursor: pointer;
+}
+.kal-ContactForm button:hover{
+    opacity: 0.85;
+}
+
+
+/* ------------------------- -- - - WORK IN PROGRESS STYLIZATIONS - - -- -------------------------------*/
+.kal-WIPBox{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    margin: 40px;
+    padding: 40px 30px;
+    border-radius: 120px 0px 120px 0px;
+    border: 2px solid rgba(255, 157, 0, 0.25);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(180deg, rgba(255, 157, 0, 0.18), rgba(78, 29, 87, 0.28));
+    text-align: center
+}
+.kal-WIPImg{
+    width: min(240px, 70%);
     height: auto;
-    flex-shrink: 0;
+    display: block;
+    align-items: center;
+
+    filter: drop-shadow(0 10px 18px rgba (0, 0, 0, 0.25));
 }
+.kal-WIPImg img{
+    background: transparent;
+}
+.kal-WIPImg img:hover{
+    box-shadow: none;
+}
+.kal-WIPBadge{
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: (255, 157, 0, 0.9);
 
-.kal-portfolio-1P1I-Box p {
-    flex: 1;
+    color: var(--fontColor-ContR);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.kal-WIPLine{
+    width: min(420px, 80%);
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, var(--mainColor-Sub1), transparent);
+}
+.kal-WIPBox h1{
+    margin: 0;
+    background: transparent;
+    padding: 0;
 
+    color: var(--fontColor-ContW);
+}
+.kal-WIPBox p{
+    margin: 0;
+    background: transparent;
+    padding: 0;
+
+    color: var(--fontColor-ContW);
+    text-align: center;
 }
 
 
