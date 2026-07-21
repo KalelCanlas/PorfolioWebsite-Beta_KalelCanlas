@@ -1,14 +1,14 @@
 /*Reusable OnePoint Variables*/
 :root {
     /*ColorSchemes*/
-    --mainColor-Dom: rgb(2, 18, 32);
+    --mainColor-Dom: rgb(18, 2, 32);
     --mainColor-Sub1: rgb(255, 157, 0);
-    --mainColor-Sub2a: rgb(0, 35, 105);
-    --mainColor-Sub2b: rgba(13, 255, 0, 0.5);
-    --mainColor-Sub3: rgb(0, 255, 140);
+    --mainColor-Sub2a: rgb(34, 11, 56);
+    --mainColor-Sub2b: rgba(255, 157, 0, 0.5);
+    --mainColor-Sub3: rgb(231, 255, 244);
     --mainColor-Sub4: rgb(0, 255, 234);
-    --mainColor-Sub5: rgba(51, 0, 255, 0.45);
-    --mainColor-Sub6: rgb(0, 255, 128);
+    --mainColor-Sub5: rgba(197, 148, 24, 0.45);
+    --mainColor-Sub6: rgb(78, 29, 87);
 
     /*FontColorSchemes*/
     --fontColor-Title: rgb(255, 0, 0);
@@ -43,15 +43,15 @@ body {
 
 /*----- ---- --- -- - HEADER Section Stylization - -- --- ---- ----- */
 .canlas-StylizedHeader {
-    text-align: right;
+    text-align: right bottom;
     text-shadow: 10 10 10 var(--mainColor-Sub1);
     color: var(--fontColor-ContW);
 
-    background-color: var(--mainColor-Sub6);
-    background-position: center;
-    background-repeat: repeat;
+    background:  radial-gradient(circle 500px, rgb(194, 82, 7), rgb(161, 43, 4), rgb(110, 28, 40), rgb(82, 13, 45), rgb(53, 3, 64), rgb(48, 9, 71), var(--mainColor-Sub2a));
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-size: 100%;
-    background-blend-mode: color-dodge;
+    /*background-blend-mode: color-dodge;*/
 
     border: 90px;
     padding: 15px 15px 0px 15px;
@@ -61,7 +61,7 @@ body {
 
 .kal-StylizedNavbar {
     background-color: var(--mainColor-Sub2a);
-    padding: 5px 15px 0px 15px;
+    padding: 15px 15px 0px 15px;
     border-radius: 15px 15px 0px 0px;
 
     text-align: center;
@@ -69,7 +69,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 12px;
+    gap: 15px;
 }
 
 .kal-StylizedNavbar a {
@@ -103,7 +103,7 @@ body {
 @media (max-width: 600px) {
     .kal-StylizedNavbar {
         background-color: var(--mainColor-Sub2a);
-        padding: 5px 15px 0px 15px;
+        padding: 10px 15px 0px 15px;
         border-radius: 15px 15px 0px 0px;
 
         text-align: center;
@@ -136,6 +136,32 @@ body {
     width: 100%;
 }
 
+.kal-HeaderBrand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+
+    gap: 12px;
+    width: 100%;;
+}
+.kal-HeaderBrand h1{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.kal-Logo{
+    width: 125px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+
+    background-color: rgba(255, 157, 0, 0.5);
+    padding: 13px 50px;
+    margin: -15px -15px 0 -10px;
+}
+
 /*----- ---- --- -- - MAIN Section Stylization - -- --- ---- ----- */
 .canlas-StylizedMain {
     text-align: center;
@@ -146,7 +172,7 @@ body {
     background-image: url(https://static.vecteezy.com/system/resources/previews/060/274/391/non_2x/line-art-seamless-pattern-modern-pattern-black-and-white-pattern-doodle-art-doodle-pattern-funy-pattern-for-kids-and-teenagers-vector.jpg);
     background-repeat: repeat;
     background-size: 25%;
-    background-blend-mode: overlay;
+    background-blend-mode: darken;
     padding: 0px;
     margin: 0px;
 
@@ -173,8 +199,7 @@ body {
 
 .canlas-StylizedMain aside {
     background-color: var(--mainColor-Sub5);
-    padding: 15px;
-
+    padding: 15px 35px 0 20px;
     flex: 3;
     text-align: right;
 
@@ -346,10 +371,32 @@ body {
 /*----- ---- --- -- - FOOTER Section Stylization - -- --- ---- ----- */
 .canlas-StylizedFooter {
     text-align: center;
-    font-size: x-small;
-    color: var(--fontColor-ContR);
+    color: var(--fontColor-ContW);
 
     background-color: var(--mainColor-Sub2a);
-    padding: 30px 50px;
+    padding: 28px 20px;
+    border-top: 4px solid var(--mainColor-Sub5);
+}
+.canlas-StylizedFooter footer{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
 
+    gap: 10px;
+    margin: 0 auto;
+
+    align-items: center;
+}
+.canlas-StylizedFooter .kal-FooterTitle{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--fontColor-Bold);
+}
+.canlas-StylizedFooter .kal-FooterContact{
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--fontColor-ContW);
+    opacity: 0.9;
 }

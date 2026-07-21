@@ -1,5 +1,9 @@
 .kal-Img{
-    width: 250px;
+    width: 100%;
+    height: auto;
+
+    display: block;
+
     cursor: pointer;
     transition: transform 0.3s ease;
 
