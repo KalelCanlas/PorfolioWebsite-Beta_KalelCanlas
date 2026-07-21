@@ -278,6 +278,28 @@ body {
 
     backdrop-filter: blur(5px);
 }
+.kal-BannerZ{
+    max-width: 100%;
+    height: 250px;
+    margin: 0px;
+
+    background-color: rgba(78, 29, 87, 0.749);
+    background-image: url('../img/resources/MyselfPicture.png');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: 2px solid rgba(255, 157, 0, 0.25);
+
+    transition: height 0.5s ease;
+    max-width: 100%;
+    height: 750px;
+
+    background-color: rgba(255, 153, 0, 0.25);
+    border-bottom: 5px solid rgba(255, 157, 0, 0.25);
+
+    backdrop-filter: blur(5px);
+}
 .kal-Banner h3 {
     font-size: xx-large;
     text-align: center;

@@ -7,14 +7,19 @@ to create our own Portfolio Website!
 
 CONTENT:
     Homepage
-        Welcome
-        Introduction
-        Other Personal Information
-        Special Thanks
-
-    Tabs
-        Projects
-        Settings
+        Homepage
+            Contact
+        About Me
+            Basic Info
+            Credentials
+            Education
+            Work Experiences
+        Project
+            Tabs and Folios
+                Gallery
+                Context
+                Flairs
+                History
 
 CREDITS:
     Website Background Image:
@@ -22,3 +27,5 @@ CREDITS:
         Credit: Vecteezy
         Copyright: Liza Karandaeva
         URL: https://www.vecteezy.com/vector-art/60274391-line-art-seamless-pattern-modern-pattern-black-and-white-pattern-doodle-art-doodle-pattern-funy-pattern-for-kids-and-teenagers
+
+NOTE: The image displaying my artworked face was made by me!
